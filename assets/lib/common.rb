@@ -33,7 +33,7 @@ class PullRequest
   end
 
   def id
-    @pr['number']
+    @pr.fetch('number', -1)
   end
 
   def sha
